@@ -1,0 +1,250 @@
+%-NOTES------------------------------------------------------------------------
+% Nothing! =)
+
+%------------------------------------------------------------------------------
+%	DOCUMENT CONFIGURATION
+%------------------------------------------------------------------------------
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage[super]{nth}
+\usepackage{hyperref}
+\usepackage{marvosym}
+\usepackage{fontawesome}
+
+%------------------------------------------------------------------------------
+% PROFICIENCY SYMBOLS
+%------------------------------------------------------------------------------
+\usepackage{xcolor}
+\newcommand{\skill}[1][4]{
+  \setlength{\unitlength}{0.75ex}%
+  \begin{picture}(1,1.8)
+    \linethickness{0.2ex}
+    \textcolor{gray!50}{\multiput(0, 0.15)(0, 0.6){4}{\line(1,0){1}}}
+    \multiput(0, 0.15)(0, 0.6){#1}{\line(1,0){1}}
+  \end{picture}%
+}
+
+%------------------------------------------------------------------------------
+%	PROFILE SECTION
+%------------------------------------------------------------------------------
+\name{Amir Maleki} % Name
+\address{\href{tel:+989120806041}{\faPhoneSquare \ +98 912 080 6041} \\ \href{mailto:maleki7425@gmail.com}{\faEnvelopeSquare \ maleki7425@gmail.com}}
+\address{
+%           \href{amirmaleki.com}{\faExternalLinkSquare \ AmirMaleki.com} \\
+          \href{https://github.com/thisisamirmaleki}{\faGithubSquare/}
+          \href{https://www.linkedin.com/in/thisisamirmaleki/}{\faLinkedinSquare \ ThisIsAmirMaleki}
+        }
+\address{\faMapMarker\ Tehran, Iran}  % TODO: full address
+
+
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+
+
+\begin{document}
+
+%------------------------------------------------------------------------------
+%	SUMMARY SECTION
+%------------------------------------------------------------------------------
+\begin{rSection}{Summary}
+  % who am I, what I did, what I want to do
+  % presentation, critical thinking, troubleshooting/debugging, interdisciplinary, teamwork, adaptability (fast learner)
+  % + transferable skills (max 3 items)
+
+  % DevOps
+  I am a flexible, ambitious, and precise Computer Engineer with a solid background in web development and programming.
+  I have an extensive understanding of computer systems as well as considerable technical, debugging, and troubleshooting skills.
+  I am looking for an opportunity to advance my abilities in a challenging working environment and become a valuable asset to the team.
+\end{rSection}
+
+%------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%------------------------------------------------------------------------------
+\begin{rSection}{Education}
+  {\bf Amirkabir University of Technology} \hfill {\em 2016 - 2021} \\
+  B.Sc. in Computer Engineering \\
+  CGPA: 16.39/20, 3.35/4.00
+
+  {\bf Amirkabir University of Technology} \hfill {\em 2014 - 2016} \\
+  B.Sc. in Electrical Engineering \\
+  {\em Changed major to Computer Engineering at Amirkabir University of Technology}
+
+  {\bf Allameh Helli High School} \hfill {\em 2010 - 2014} \\
+  High School \& Pre-University Diploma in Mathematics \& Physics \\
+  CGPA: 19.75/20, 4.00/4.00
+\end{rSection}
+
+%------------------------------------------------------------------------------
+%	WORK INTERESTS SECTION
+%------------------------------------------------------------------------------
+\begin{rSection}{Fields of Interest}
+  % DevOps
+  DevOps ~$\cdot$~ Automation ~$\cdot$~ Configuration Management \\[1ex]
+  Containerization ~$\cdot$~ Orchestration ~$\cdot$~ CI/CD ~$\cdot$~ Monitoring ~$\cdot$~ Networks
+  % Frontend
+  %Front-end Web Development ~$\cdot$~ UI ~$\cdot$~ UX
+  % Mobile
+  %Mobile App Development ~$\cdot$~ React Native ~$\cdot$~ PWA
+\end{rSection}
+
+%------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%------------------------------------------------------------------------------
+\begin{rSection}{Work Experience}
+
+  \begin{rSubsection}{Mehr Aria Informatic Development}{\em April 2022 - July 2022}{Full Stack Developer}{Tehran, Iran}
+    \item Development of a web application for warehousing and inventory management
+    \item Skills: Java Spring, JSON, SQL, React, HTML, CSS, JavaScript
+  \end{rSubsection}
+
+  %------------------------------------------------------------------------------
+
+  \begin{rSubsection}{Karno Team}{\em April 2020 - July 2020}{Founder \& Developer}{Tehran, Iran}
+    \item Ideation and development of a remote working management system
+    \item Skills: C\#, WPF, HTML, CSS, JavaScript, JSON, SQL
+  \end{rSubsection}
+
+  %------------------------------------------------------------------------------
+
+  \begin{rSubsection}{Borna Management Systems}{\em September 2019 - December 2019}{SAP Business One Developer}{Tehran, Iran}
+    \item Development of SAP Business One (9.3) add-ons for medium-sized ERP systems
+    \item Skills: SAP B1 SDK, C\#, SQL
+  \end{rSubsection}
+
+  %------------------------------------------------------------------------------
+
+  \begin{rSubsection}{Iran RoboCup Junior Soccer League}{\em March 2017 - 2019}{Technical Committee Member}{Tehran, Iran}
+    \item Refereeing JSL matches in RoboCup Iran Open \& Asia-Pacific 2018 competitions
+    \item Skills: Critical decision making, General mechanic/electronic/programming knowledge
+  \end{rSubsection}
+
+  %------------------------------------------------------------------------------
+
+  \begin{rSubsection}{Parsian Small Sized League}{\em April 2015 - August 2016}{Electronics Group Member}{Amirkabir University of Technology, Tehran, Iran}
+    \item Maintenance and development of SSL robots' electronic parts
+    \item Skills: FPGA programming, Digital Circuit Design, Hardware Maintenance
+  \end{rSubsection}
+
+\end{rSection}
+
+%------------------------------------------------------------------------------
+%	SKILLS SECTION
+%------------------------------------------------------------------------------
+\begin{rSection}{Professional Skills}
+  % \begin{rSection}{Business Skills *}
+  \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+    Scripting/Automation           & Python\skill[3] ~$\cdot$~ Bash\skill[3] ~$\cdot$~ Ansible\skill[1]                  \\[1ex]
+    Operating System               & Debian Linux (Ubuntu)\skill[3] ~$\cdot$~ Windows\skill[2]                           \\[1ex]
+    Containerization/Orchestration & Docker\skill[2] ~$\cdot$~ Kubernetes\skill[1] ~$\cdot$~ Helm\skill[1]               \\[1ex]
+    Monitoring                     & Grafana\skill[3] ~$\cdot$~ Prometheus\skill[3]                                      \\[1ex]
+    Web Server/Load Balancer       & HAProxy\skill[2] ~$\cdot$~ Nginx\skill[1]                                           \\[1ex]
+    CI/CD                          & GitLab\skill[2] ~$\cdot$~ Jenkins\skill[1]                                          \\[1ex]
+    Programming Language           & Python\skill[3] ~$\cdot$~ Java\skill[3] ~$\cdot$~ C\#\skill[2] ~$\cdot$~ C\skill[2] \\[1ex]
+    Database                       & SQL\skill[2] ~$\cdot$~ Vitess\skill[1]                                              \\[1ex]
+    % Web Development: HTML, CSS, JS, JQuery, PHP, Spring, React, Django Rest Framework
+    Web Development                & HTML ~$\cdot$~ CSS ~$\cdot$~ JS ~$\cdot$~ React ~$\cdot$~ Spring ~$\cdot$~ REST     \\[1ex]
+    Typesetting                    & MS Word ~$\cdot$~MS PowerPoint ~$\cdot$~ \LaTeX
+    % Network: CompTIA Network+
+    % Hardware Description Languages & Verilog ~$\cdot$~ VHDL                                                                                              \\[1ex]
+    % Computer Vision                & OpenCV                                                                                                              \\[1ex]
+    % Illustration \& Digital Design & Photoshop ~$\cdot$~ Illustrator ~$\cdot$~ After Effects ~$\cdot$~ InDesign                                               \\[1ex]
+  \end{tabular}
+\end{rSection}
+
+%------------------------------------------------------------------------------
+%	EXPERIENCE SECTION
+%------------------------------------------------------------------------------
+\begin{rSection}{Technical Experience}
+  {\bf Digikala DevOps Infinite Bootcamp} \\
+  {\em Training in some DevOps tools and concepts} \\
+  {\em Implementation of an orchestrated web app along with CI/CD pipelines in a team}
+
+  {\bf University Courses} \\
+  {\em Cloud Computing: virtualization \& distributed computing concepts~$\cdot$~load balancing project} \\
+  {\em Computer Networks: general networking concepts~$\cdot$~network simulation project on GNS3}
+
+  % final university project
+  % robotic dabirestan, daneshgah, davari
+  % business apprenticeship
+  % personal projects (watering, voxgraph, Telegram word processing)
+
+\end{rSection}
+
+%------------------------------------------------------------------------------
+%	HONORS AND AWARDS SECTION
+%------------------------------------------------------------------------------
+\begin{rSection}{Honors \& Awards}
+  \begin{list}{}%
+    {\leftmargin=1em \itemindent=-1em}
+    \item Won first place award in Chakavak 4 entrepreneurship event, Economics Faculty of Allameh Tabatabaei University \hfill {\em 2019}
+    \item Ranked 430/200000+ in the Iranian nationwide university entrance exam \hfill {\em 2014}
+    \item Ranked 10\% top student of NODET  \hfill {\em 2007 - 2014}
+    \item Won acceptance in the first stage of national Computer Olympiad competition  \hfill {\em 2011}
+  \end{list}
+\end{rSection}
+
+%------------------------------------------------------------------------------
+%	LANGUAGE SECTION
+%------------------------------------------------------------------------------
+\begin{rSection}{Language Skills}
+  \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}}l @{\hspace{6ex}} l }
+    English
+            & IELTS
+            & Overall score: 7.5 \\[1ex]
+    % & Will be taken soon                                                                                                   \\
+    % &                    & (Mock test) Overall score: 7.5                                                                  \\
+    % &        
+    % & Overall score: 7.5 (Test date: March \nth{2} 2022) \\
+    % &                  & Listening: 9.0 ~$\cdot$~ Reading: 7.5 ~$\cdot$~ Writing: 6.5 ~$\cdot$~ Speaking: 7.0 \smallskip \\[1ex]
+    % & GRE
+    % & Will be taken soon \\
+    % & Verbal Reasoning: 160 (\nth{96} percentile) \\
+    % && Quantitative Reasoning: 140 (\nth{91} percentile) \\
+    % && Analytical Writing: 4.0 (\nth{92} percentile) \\
+    Persian & Native             \\[1ex]
+    % Arabic  & A1                 \\[1ex]
+    French  & A1
+  \end{tabular}
+\end{rSection}
+
+%------------------------------------------------------------------------------
+%	EXTRA SECTION
+%------------------------------------------------------------------------------
+\begin{rSection}{Extracurricular Activities}
+  Music (Violinist, Vocalist) \\
+  Freelance Digital Design, Analog Photography \\
+  High School \& Core University Courses Tuition \\
+  Search Tricks Lecture for Appreneurs \\
+  Social Science Cultural Center Management at AUT \\
+  Bodybuilding, Soccer, Cycling, Swimming  % Martial Arts
+\end{rSection}
+
+\end{document}
+
+%------------------------------------------------------------------------------
+%	SELECTED COURSES SECTION
+%------------------------------------------------------------------------------
+% \begin{rSection}{Selected Courses *}
+%   \begin{list}{}%
+%     {\leftmargin=1em \itemindent=-1em}
+%     \item Microprocessors and lab
+%     \item Math2
+%     \item Processor Lab
+%     \item Programming
+%     \item Internet of Things
+%     \item Physics2 and lab
+%     \item Networks and lab
+%     \item Cloud Computing
+%     \item Physics1 and lab
+%     \item Algorithm Design
+%     \item Digital Design and lab
+%     \item Operating Systems and lab
+%     \item Differential
+%     \item Statistics
+%     \item Data Communication
+%     \item Security
+%     \item Software Engineering 1
+%     \item Data Retrieval
+%     \item Math1
+%   \end{list}
+% \end{rSection}
